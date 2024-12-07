@@ -15,3 +15,10 @@ x = 85
 y = 9.5
 resultat = x+y
 print(resultat, "of type",type(resultat))
+
+age = 27
+message = "i am" + str(age) + "year old"
+a = 5
+b= "3"
+resultat = a+ int(b)
+print(resultat)
