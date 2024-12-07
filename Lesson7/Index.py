@@ -14,4 +14,4 @@ print(bool(None)) # Output: False
 x = 85
 y = 9.5
 resultat = x+y
-print(resultat, "of type",type(x+y))
+print(resultat, "of type",type(resultat))
