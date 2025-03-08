@@ -60,3 +60,30 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+import streamlit as st
+
+st.title("Human Information Form")
+st.write("Welcome to the Human Information app")
+
+# Function to show the entered information
+def show_user_info(name, surname, age, height):
+    st.write(f"Name: {name}")
+    st.write(f"Surname: {surname}")
+    st.write(f"Age: {age}")
+    st.write(f"Height: {height} cm")
+
+# Collecting user information
+name = st.text_input("Enter your first name")
+surname = st.text_input("Enter your surname")
+age = st.number_input("Enter your age", min_value=1, max_value=120)
+height = st.number_input("Enter your height (in cm)", min_value=50, max_value=300)
+
+if st.button("Add User Information"):
+    # Display the information when the button is clicked
+    if name and surname:
+        st.success(f"{name} {surname} has been added successfully!")
+        show_user_info(name, surname, age, height)
+    else:
+        st.error("Please enter both name and surname.")
+
