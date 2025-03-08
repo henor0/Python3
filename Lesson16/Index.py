@@ -29,3 +29,5 @@ if st.checkbox("Click me to show you some text"):
 
     user_message = st.text_area("Enter a message")
     st.write(f"Your message: {user_message}")
+
+import streamlit as st
