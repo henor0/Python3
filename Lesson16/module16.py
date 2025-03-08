@@ -8,7 +8,7 @@ if st.button('Click Me'):
     st.checkbox("check me")
 
 if st.checkbox("check me to show some text"):
-    # If checkbox is checked, display the text
+
     st.write("hello digitalschool")
 
     user_input = st.text_input("Enter text", "Enter some text here")
@@ -20,7 +20,7 @@ if st.checkbox("check me to show some text"):
     message = st.text_area("Enter a message")
     st.write(f"Your message: {message}")
 
-    choice = st.radio("Pick one", ['Choice 1', 'Choice 2', 'Choice 3'])  # Corrected the typo here
+    choice = st.radio("Pick one", ['Choice 1', 'Choice 2', 'Choice 3'])
     st.write(f"You chose: {choice}")
 
     if st.button("Success"):
@@ -31,7 +31,7 @@ if st.checkbox("check me to show some text"):
         except Exception as e:
             st.exception(e)
 
-# The calculator functions and main logic should be defined outside the button condition
+
 def calculate(num1, num2, operation):
     if operation == 'Add':
         return num1 + num2
