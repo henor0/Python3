@@ -14,4 +14,5 @@ data = {
     }
    ]
 }
-print(data["name"])
+print(data["adress"],["city"])
+print(data["contact"][0]["type"])
